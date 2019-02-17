@@ -27,6 +27,12 @@ public static void main(String[] args) throws Exception {
 	int noOfRows = sh.getLastRowNum();
 	System.out.println(noOfRows);
 	
+	for(int i=1;i<=noOfRows;i++)
+	{
+		System.out.println(sh.getRow(i).getCell(0));
+		System.out.println(sh.getRow(i).getCell(1));
+	}
+	
 	row = sh.createRow(1);
 	cell = row.createCell(0);
 	cell.setCellValue("QAV");
